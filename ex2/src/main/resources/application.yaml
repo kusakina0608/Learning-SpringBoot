@@ -1,0 +1,10 @@
+spring.datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://172.30.1.1:3306/bootex
+  username: bootuser
+  password: bootuser
+
+spring.jpa:
+  hibernate.ddl-auto: update
+  properties.hibernate.format_sql: true
+  show-sql: true
