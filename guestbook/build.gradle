@@ -30,6 +30,12 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
     implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.4.RELEASE'
+    // Querydsl
+    implementation group: 'com.querydsl', name: 'querydsl-core', version: '5.0.0'
+    implementation group: 'com.querydsl', name: 'querydsl-jpa', version: '5.0.0'
+    annotationProcessor "javax.persistence:javax.persistence-api"
+    annotationProcessor "javax.annotation:javax.annotation-api"
+    annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jpa"
 }
 
 tasks.named('test') {
